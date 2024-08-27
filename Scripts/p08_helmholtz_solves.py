@@ -21,17 +21,17 @@ if __name__ == "__main__":
     solver_mode = int(sys.argv[3])
 
     if model_mode == 0:
-        filepath1 = "Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-sigsbee-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p08-sigsbee-"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-sigsbee-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p08-sigsbee-"
     elif model_mode == 1:
-        filepath1 = "Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-marmousi-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p08-marmousi-"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-marmousi-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p08-marmousi-"
     elif model_mode == 2:
-        filepath1 = "Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-seiscope-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p08-seiscope-"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-seiscope-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p08-seiscope-"
     else:
         raise ValueError("model mode = ", model_mode, " is not supported. Must be 0, 1, or 2.")
 

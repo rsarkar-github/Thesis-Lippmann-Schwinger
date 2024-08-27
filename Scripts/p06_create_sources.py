@@ -14,11 +14,11 @@ if __name__ == "__main__":
     model_mode = int(sys.argv[1])
 
     if model_mode == 0:
-        filepath = "Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
     elif model_mode == 1:
-        filepath = "Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
     elif model_mode == 2:
-        filepath = "Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
     else:
         print("model mode = ", model_mode, " is not supported. Must be 0, 1, or 2.")
 
@@ -92,18 +92,18 @@ if __name__ == "__main__":
 
     if model_mode == 0:
         sou = create_arc_source()
-        np.savez("Lippmann-Schwinger/Data/p06-sigsbee-source.npz", sou)
-        savefig_fname = "Lippmann-Schwinger/Fig/p06-sigsbee-source.pdf"
+        np.savez("Thesis-Lippmann-Schwinger/Data/p06-sigsbee-source.npz", sou)
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p06-sigsbee-source.pdf"
 
     if model_mode == 1:
         sou = create_gaussian_point_source()
-        np.savez("Lippmann-Schwinger/Data/p06-marmousi-source.npz", sou)
-        savefig_fname = "Lippmann-Schwinger/Fig/p06-marmousi-source.pdf"
+        np.savez("Thesis-Lippmann-Schwinger/Data/p06-marmousi-source.npz", sou)
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p06-marmousi-source.pdf"
 
     if model_mode == 2:
         sou = create_line_source()
-        np.savez("Lippmann-Schwinger/Data/p06-seiscope-source.npz", sou)
-        savefig_fname = "Lippmann-Schwinger/Fig/p06-seiscope-source.pdf"
+        np.savez("Thesis-Lippmann-Schwinger/Data/p06-seiscope-source.npz", sou)
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p06-seiscope-source.pdf"
 
 
     # ----------------------------------------------

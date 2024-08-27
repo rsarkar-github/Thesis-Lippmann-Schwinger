@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # ----------------------
     # Load Marmousi
     # ----------------------
-    with np.load("Lippmann-Schwinger/Data/marmousi-vp.npz") as data:
+    with np.load("Thesis-Lippmann-Schwinger/Data/marmousi-vp.npz") as data:
         vp = data["arr_0"]
     vp = vp.T
     vp = vp / 1000.0
@@ -106,8 +106,8 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz", vp_mean_2d)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04b-marmousi-new-vz-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz", vp_mean_2d)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04b-marmousi-new-vz-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()
 
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz", vp_total)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04b-marmousi-new-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz", vp_total)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04b-marmousi-new-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()

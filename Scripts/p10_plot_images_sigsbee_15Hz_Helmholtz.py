@@ -7,7 +7,7 @@ if __name__ == "__main__":
     # ----------------------------------------------
     # Load wavefields
     # ----------------------------------------------
-    filepath3_ = "Lippmann-Schwinger/Data/p08-sigsbee-"
+    filepath3_ = "Thesis-Lippmann-Schwinger/Data/p08-sigsbee-"
     freq = 15
 
     with np.load(filepath3_ + "sol-" + "gmres" + "-" + "{:4.2f}".format(freq) + ".npz") as data:
@@ -37,6 +37,6 @@ if __name__ == "__main__":
         plt.savefig(savefig_name, format="pdf", bbox_inches="tight", pad_inches=0.01)
         plt.show()
 
-    plot(data=np.real(data_sol1), savefig_name="Lippmann-Schwinger/Fig/p10-sigsbee-sol-gmres-15.00.pdf")
-    plot(data=np.real(data_sol2), savefig_name="Lippmann-Schwinger/Fig/p10-sigsbee-sol-lsqr-15.00.pdf")
-    plot(data=np.real(data_sol3), savefig_name="Lippmann-Schwinger/Fig/p10-sigsbee-sol-lsmr-15.00.pdf")
+    plot(data=np.real(data_sol1), savefig_name="Thesis-Lippmann-Schwinger/Fig/p10-sigsbee-sol-gmres-15.00.pdf")
+    plot(data=np.real(data_sol2), savefig_name="Thesis-Lippmann-Schwinger/Fig/p10-sigsbee-sol-lsqr-15.00.pdf")
+    plot(data=np.real(data_sol3), savefig_name="Thesis-Lippmann-Schwinger/Fig/p10-sigsbee-sol-lsmr-15.00.pdf")

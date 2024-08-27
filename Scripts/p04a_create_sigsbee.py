@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # ----------------------
     # Load Sigsbee
     # ----------------------
-    with np.load("Lippmann-Schwinger/Data/sigsbee.npz") as data:
+    with np.load("Thesis-Lippmann-Schwinger/Data/sigsbee.npz") as data:
         vp = data["arr_0"]
     vp = 0.3048 * vp / 1000.0
 
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     plt.show()
 
     # Turn this on to save intermediate Sigsbee model
-    # np.savez("Lippmann-Schwinger/Data/sigsbee-new.npz", vp_interp)
+    # np.savez("Thesis-Lippmann-Schwinger/Data/sigsbee-new.npz", vp_interp)
 
     # --------------------------------------------------------
     # Estimating v(z)
@@ -110,8 +110,8 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz", vp_mean_2d)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04a-sigsbee-new-vz-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz", vp_mean_2d)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04a-sigsbee-new-vz-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()
 
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz", vp_total)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04a-sigsbee-new-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz", vp_total)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04a-sigsbee-new-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()

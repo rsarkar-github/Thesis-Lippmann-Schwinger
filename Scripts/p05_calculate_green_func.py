@@ -15,11 +15,11 @@ if __name__ == "__main__":
     freq_mode = int(sys.argv[2])
 
     if model_mode == 0:
-        filepath = "Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
     elif model_mode == 1:
-        filepath = "Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
     elif model_mode == 2:
-        filepath = "Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
     else:
         print("model mode = ", model_mode, " is not supported. Must be 0, 1, or 2.")
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     m_ = 4
     sigma_ = 0.0015
     precision_ = np.complex64
-    green_func_dir_ = filepath = "Lippmann-Schwinger/Data/p05-green-func-" + str(model_mode) + "-" + str(freq_mode)
+    green_func_dir_ = filepath = "Thesis-Lippmann-Schwinger/Data/p05-green-func-" + str(model_mode) + "-" + str(freq_mode)
     num_threads_ = 4
     vz_ = np.zeros(shape=(nz_, 1), dtype=np.float32) + vel_trace
     print("Green's function directory: ", green_func_dir_)

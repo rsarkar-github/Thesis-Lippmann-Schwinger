@@ -32,3 +32,7 @@ conda install matplotlib=3.7.1
 conda install tqdm
 
 ```
+
+# Contact
+
+If you discover any bugs, please report them to me at ```rsarkar at stanford dot edu```

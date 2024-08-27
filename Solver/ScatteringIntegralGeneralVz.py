@@ -1944,7 +1944,7 @@ if __name__ == "__main__":
     m_ = 5
     sigma_ = 0.004
     precision_ = np.complex64
-    green_func_dir_ = "Lippmann-Schwinger/Test/Data"
+    green_func_dir_ = "Thesis-Lippmann-Schwinger/Test/Data"
     num_threads_ = 4
     vz_ = np.zeros(shape=(nz_, 1), dtype=np.float32) + 1.0
 

@@ -53,7 +53,7 @@ if __name__ == "__main__":
     plt.xlabel(r"x")
     plt.ylabel(r"z")
 
-    savefig_fname = "Lippmann-Schwinger/Fig/p03_grid_plot.pdf"
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p03_grid_plot.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
 
     plt.show()

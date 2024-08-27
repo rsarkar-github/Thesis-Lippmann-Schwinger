@@ -15,23 +15,23 @@ if __name__ == "__main__":
     freq_mode = int(sys.argv[2])
 
     if model_mode == 0:
-        filepath = "Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07-sigsbee-"
-        savefig_fname = "Lippmann-Schwinger/Fig/p09-sigsbee-overlay-rhs.pdf"
-        savefig_fname_sol = "Lippmann-Schwinger/Fig/p09-sigsbee-overlay-sol.pdf"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07-sigsbee-"
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p09-sigsbee-overlay-rhs.pdf"
+        savefig_fname_sol = "Thesis-Lippmann-Schwinger/Fig/p09-sigsbee-overlay-sol.pdf"
     elif model_mode == 1:
-        filepath = "Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07-marmousi-"
-        savefig_fname = "Lippmann-Schwinger/Fig/p09-marmousi-overlay-rhs.pdf"
-        savefig_fname_sol = "Lippmann-Schwinger/Fig/p09-marmousi-overlay-sol.pdf"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07-marmousi-"
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p09-marmousi-overlay-rhs.pdf"
+        savefig_fname_sol = "Thesis-Lippmann-Schwinger/Fig/p09-marmousi-overlay-sol.pdf"
     elif model_mode == 2:
-        filepath = "Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07-seiscope-"
-        savefig_fname = "Lippmann-Schwinger/Fig/p09-seiscope-overlay-rhs.pdf"
-        savefig_fname_sol = "Lippmann-Schwinger/Fig/p09-seiscope-overlay-sol.pdf"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07-seiscope-"
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p09-seiscope-overlay-rhs.pdf"
+        savefig_fname_sol = "Thesis-Lippmann-Schwinger/Fig/p09-seiscope-overlay-sol.pdf"
     else:
         raise ValueError("model mode = ", model_mode, " is not supported. Must be 0, 1, or 2.")
 

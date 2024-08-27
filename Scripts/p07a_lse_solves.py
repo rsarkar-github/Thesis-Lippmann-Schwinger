@@ -20,20 +20,20 @@ if __name__ == "__main__":
     solver_mode = int(sys.argv[3])
 
     if model_mode == 0:
-        filepath = "Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-sigsbee-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07a-sigsbee-"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04a-sigsbee-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-sigsbee-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07a-sigsbee-"
     elif model_mode == 1:
-        filepath = "Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-marmousi-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07a-marmousi-"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04b-marmousi-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-marmousi-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07a-marmousi-"
     elif model_mode == 2:
-        filepath = "Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
-        filepath1 = "Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
-        filepath2 = "Lippmann-Schwinger/Data/p06-seiscope-source.npz"
-        filepath3_ = "Lippmann-Schwinger/Data/p07a-seiscope-"
+        filepath = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz"
+        filepath1 = "Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz"
+        filepath2 = "Thesis-Lippmann-Schwinger/Data/p06-seiscope-source.npz"
+        filepath3_ = "Thesis-Lippmann-Schwinger/Data/p07a-seiscope-"
     else:
         raise ValueError("model mode = ", model_mode, " is not supported. Must be 0, 1, or 2.")
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     m_ = 4
     sigma_ = 0.0015
     precision_ = np.complex64
-    green_func_dir_ = "Lippmann-Schwinger/Data/p05-green-func-" + str(model_mode) + "-" + str(freq_mode)
+    green_func_dir_ = "Thesis-Lippmann-Schwinger/Data/p05-green-func-" + str(model_mode) + "-" + str(freq_mode)
     num_threads_ = 4
     vz_ = np.zeros(shape=(nz_, 1), dtype=np.float32) + vel_trace
 

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
 
     # Load Marmousi
-    with np.load("Lippmann-Schwinger/Data/marmousi-vp.npz") as data:
+    with np.load("Thesis-Lippmann-Schwinger/Data/marmousi-vp.npz") as data:
         vp = data["arr_0"]
 
     # Get shape (500, 174)
@@ -43,14 +43,14 @@ if __name__ == "__main__":
         vp_mean_2d[i, :] = vp_mean
 
     # Save Marmousi v(z)
-    np.savez("Lippmann-Schwinger/Data/marmousi-vp-vz.npz", vp_mean)
-    np.savez("Lippmann-Schwinger/Data/marmousi-vp-vz-2d.npz", vp_mean_2d)
+    np.savez("Thesis-Lippmann-Schwinger/Data/marmousi-vp-vz.npz", vp_mean)
+    np.savez("Thesis-Lippmann-Schwinger/Data/marmousi-vp-vz-2d.npz", vp_mean_2d)
 
     # ---------------------------
     # Plot Marmousi-2 vp-vz-model
     # ---------------------------
 
-    with np.load("Lippmann-Schwinger/Data/marmousi-vp-vz-2d.npz") as data:
+    with np.load("Thesis-Lippmann-Schwinger/Data/marmousi-vp-vz-2d.npz") as data:
         vp_mean_2d = data["arr_0"]
 
     fig = plt.figure(figsize=(12, 3))  # define figure size
@@ -62,6 +62,6 @@ if __name__ == "__main__":
     plt.xlabel('x$_1$ [m]')
     plt.ylabel('z [m]')
 
-    savefig_fname = "Lippmann-Schwinger/Fig/marmousi-vp-vz-2d.pdf"
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/marmousi-vp-vz-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()

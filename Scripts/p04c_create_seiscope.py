@@ -26,8 +26,8 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz", vp)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04c-seiscope-new-vz-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-vz-2d.npz", vp)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04c-seiscope-new-vz-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     plt.xlabel(r'$x_1$ [km]')
     plt.ylabel(r'$z$ [km]')
 
-    np.savez("Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz", vp_total)
-    savefig_fname = "Lippmann-Schwinger/Fig/p04c-seiscope-new-2d.pdf"
+    np.savez("Thesis-Lippmann-Schwinger/Data/p04c-seiscope-new-2d.npz", vp_total)
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p04c-seiscope-new-2d.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
     plt.show()

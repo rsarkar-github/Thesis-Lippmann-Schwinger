@@ -60,7 +60,7 @@ if __name__ == "__main__":
     plt.title('Helmholtz')
     plt.xlabel('x')
     plt.ylabel('z')
-    savefig_fname = "Lippmann-Schwinger/Fig/p02a_Helmholtz.pdf"
+    savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p02a_Helmholtz.pdf"
     plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
 
     # Compute Lippmann-Schwinger solver
@@ -85,7 +85,7 @@ if __name__ == "__main__":
                 m=m,
                 sigma=item,
                 precision=precision,
-                green_func_dir="Lippmann-Schwinger/Test/Data/t09",
+                green_func_dir="Thesis-Lippmann-Schwinger/Test/Data/t09",
                 num_threads=8,
                 verbose=False,
                 light_mode=False
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         plt.title('LS, ' + r'$\sigma = $' + "{:6.4f}".format(item))
         plt.xlabel('x')
         plt.ylabel('z')
-        savefig_fname = "Lippmann-Schwinger/Fig/p02a_ls_sigma_" + "{:6.6f}".format(item) + ".pdf"
+        savefig_fname = "Thesis-Lippmann-Schwinger/Fig/p02a_ls_sigma_" + "{:6.6f}".format(item) + ".pdf"
         plt.savefig(savefig_fname, format="pdf", bbox_inches="tight", pad_inches=0.01)
 
         rel_error.append(np.linalg.norm(sol1 - sol2) / np.linalg.norm(sol1))

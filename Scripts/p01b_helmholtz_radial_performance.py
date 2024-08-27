@@ -90,7 +90,7 @@ if __name__ == "__main__":
     freq = float(sys.argv[1])
 
     # Load Marmousi velocity trace
-    with np.load("Lippmann-Schwinger/Data/marmousi-vp-vz.npz") as data:
+    with np.load("Thesis-Lippmann-Schwinger/Data/marmousi-vp-vz.npz") as data:
         vel_trace = data["arr_0"]
     vel_trace /= 1000.0
     n1_vel_trace = vel_trace.shape[0]
