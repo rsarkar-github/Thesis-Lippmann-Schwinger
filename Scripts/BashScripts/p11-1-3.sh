@@ -9,6 +9,6 @@ conda activate py39
 cd $SCRIPT_DIR
 cd ../../..
 
-python -m Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 0
-python -m Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 1
-python -m Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 2
+python -m Thesis-Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 0
+python -m Thesis-Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 1
+python -m Thesis-Lippmann-Schwinger.Scripts.p11_initial_vel_solves 1 3 2

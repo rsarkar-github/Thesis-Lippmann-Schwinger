@@ -9,4 +9,4 @@ conda activate py39
 cd $SCRIPT_DIR
 cd ../../..
 
-python -m Lippmann-Schwinger.Scripts.p01_create_vz_marmousi
+python -m Thesis-Lippmann-Schwinger.Scripts.p01_create_vz_marmousi

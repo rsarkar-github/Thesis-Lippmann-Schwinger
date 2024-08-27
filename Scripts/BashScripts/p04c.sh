@@ -9,4 +9,4 @@ conda activate py39
 cd $SCRIPT_DIR
 cd ../../..
 
-python -m Lippmann-Schwinger.Scripts.p04c_create_seiscope
+python -m Thesis-Lippmann-Schwinger.Scripts.p04c_create_seiscope

@@ -9,4 +9,4 @@ conda activate py39
 cd $SCRIPT_DIR
 cd ../../..
 
-python -m Lippmann-Schwinger.Scripts.p10_plot_images_sigsbee_15Hz_Helmholtz
+python -m Thesis-Lippmann-Schwinger.Scripts.p10_plot_images_sigsbee_15Hz_Helmholtz

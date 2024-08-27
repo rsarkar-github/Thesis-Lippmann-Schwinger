@@ -9,6 +9,6 @@ conda activate py39
 cd $SCRIPT_DIR
 cd ../../..
 
-python -m Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 0
-python -m Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 1
-python -m Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 2
+python -m Thesis-Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 0
+python -m Thesis-Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 1
+python -m Thesis-Lippmann-Schwinger.Scripts.p08_helmholtz_solves 2 0 2
