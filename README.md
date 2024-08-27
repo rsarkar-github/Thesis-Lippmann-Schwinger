@@ -17,8 +17,8 @@ Steps to install the packages are indicated below in the Section **How to instal
 bash p01.sh
 ```
 
-- The above runs will create some files in the directory **Lippmann-Schwinger/Data/**, and all figures will be 
-created in the directory **Lippmann-Schwinger/Fig/**.
+- The above runs will create some files in the directory **Thesis-Lippmann-Schwinger/Data/**, and all figures will be 
+created in the directory **Thesis-Lippmann-Schwinger/Fig/**.
 
 # How to install the packages (assumes conda is installed).
 
