@@ -1,6 +1,6 @@
 # Lippmann-Schwinger
 
-- Numpy, Devito based Python codes for the Lippmann-Schwinger problem
+- Numpy, Scipy based Python codes for the Lippmann-Schwinger problem
 
 - Contains all codes to reproduce figures and tables in Part I: Chapter 2 of thesis
 
@@ -8,7 +8,7 @@
 - After cloning this repository, install the Python packages as indicated in the file "requirements.txt".
 Steps to install the packages are indicated below in the Section **How to install the packages**.
 
-- Navigate to the directory Lippmann-Schwinger/Scripts/BashScripts/
+- Navigate to the directory Thesis-Lippmann-Schwinger/Scripts/BashScripts/
 
 - Run all the scripts serially
 
